@@ -500,12 +500,12 @@ MainWindow.setVisible(true);
       public void ListNetworkInterfaces(){
             NETWORK_INTERFACES = JpcapCaptor.getDeviceList();
             
-            TA_OUTPUT.setText("");
+            TA_OUTPUT.setText(" ");
             
             for (int i=0;i<NETWORK_INTERFACES.length;i++){
                 TA_OUTPUT.append(
-                "\n\n----------------------------------Interface"+ i +
-                " Info----------------------------------");
+                "\n\n----------------------------------Interface:"+ i +
+                " Info---------------------------------");
                 
                 TA_OUTPUT.append("\nInterface Number: " + i);
                 TA_OUTPUT.append("\nDescription: " + NETWORK_INTERFACES[i].name + "(" +
